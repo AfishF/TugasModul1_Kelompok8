@@ -13,6 +13,6 @@ const checkOnClick = () => {
   if (filterArray.length != 0) {
     console.log("Terdapat Data :", filterArray);
   } else {
-    console.log("Gak ada data");
+    console.log("Gak ada data!!");
   }
 }
