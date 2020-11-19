@@ -7,10 +7,12 @@ const datas = [
 //
 const checkOnClick = () => {
   const getInput = document.getElementById('inputText');
+  
   const filterArray = datas.filter(user => {
-    return user.nama.toLowerCase().indexOf(getInput.value.toLowerCase()) >= 0;
+    return user.nama.toLowerCase().includes(getInput.value.toLowerCase());
   })
-  if (filterArray.length != 0) {
+
+  if (filterArray != 0) {
     console.log("Terdapat Data :", filterArray);
   } else {
     console.log("Gak ada data!!");
